@@ -1,0 +1,220 @@
+<html>
+
+<body>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <main id="main-doc">
+        <!-- SECTION 1 -->
+        <section class="main-section" id="Section_1">
+            <header class="main-section-header">Section 1</header>
+            <p class="main-section-text">Main section text.</p>
+            <p class="main-section-text">Main section text.</p>
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+            </ul>
+            <code>
+      string s = "some code stuff";<br>
+      string s2 = "some other stuff";
+    </code>
+        </section>
+
+        <!-- SECTION 2 -->
+        <section class="main-section" id="Section_2">
+            <header class="main-section-header">Section 2</header>
+            <p class="main-section-text">Main section text.</p>
+            <p class="main-section-text">Main section text.</p>
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+            </ul>
+            <code>string s = "some code stuff";</code>
+        </section>
+
+        <!-- SECTION 3 -->
+        <section class="main-section" id="Section_3">
+            <header class="main-section-header">Section 3</header>
+            <p class="main-section-text">Main section text.</p>
+            <p class="main-section-text">Main section text.</p>
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+            </ul>
+            <code>string s = "some code stuff";</code>
+        </section>
+
+        <!-- SECTION 4 -->
+        <section class="main-section" id="Section_4">
+            <header class="main-section-header">Section 4</header>
+            <p class="main-section-text">Main section text.</p>
+            <p class="main-section-text">Main section text.</p>
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+            </ul>
+            <code>string s = "some code stuff";</code>
+        </section>
+
+        <!-- SECTION 5 -->
+        <section class="main-section" id="Section_5">
+            <header class="main-section-header">Section 5</header>
+            <p class="main-section-text">Main section text.</p>
+            <p class="main-section-text">Main section text.</p>
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+            </ul>
+            <code>string s = "some code stuff";</code>
+        </section>
+    </main>
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+        <header id="navbar-header">Topic Header</header>
+
+        <div class="nav-link-wrap">
+            <a href="#Section_1" class="nav-link">Section 1</a>
+        </div>
+
+        <div class="nav-link-wrap">
+            <a href="#Section_2" class="nav-link">Section 2</a>
+        </div>
+
+        <div class="nav-link-wrap">
+            <a href="#Section_3" class="nav-link">Section 3</a>
+        </div>
+
+        <div class="nav-link-wrap">
+            <a href="#Section_4" class="nav-link">Section 4</a>
+        </div>
+
+        <div class="nav-link-wrap">
+            <a href="#Section_5" class="nav-link">Section 5</a>
+        </div>
+
+    </nav>
+
+</body>
+
+<style>
+    body {
+        margin: 0px;
+        background: rgb(230, 230, 230);
+        font-family: ubuntu, arial;
+        font-size: 1rem;
+        --navbar-width: 250px;
+    }
+
+    #main-doc {
+        margin-left: var(--navbar-width);
+    }
+
+    .main-section-header {
+        color: black;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .main-section-text {
+        color: rgb(60, 60, 60);
+        margin-bottom: 0px;
+        margin-top: 10px;
+        line-height: 1.5rem;
+        margin-left: 40px;
+        font-size: 1.2rem;
+    }
+
+    .main-section {
+        margin: 0 0px 50px 20px;
+    }
+
+    .main-section ul {
+        color: rgb(60, 60, 60);
+        font-size: 1.2rem;
+        margin-left: 80px;
+    }
+
+    code {
+        color: rgb(100, 50, 50);
+        display: block;
+        width: auto;
+        min-width: 500px;
+        line-height: 1.5rem;
+        white-space: nowrap;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 1rem;
+        margin-left: 40px;
+        margin-right: 40px;
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 200, 0.4);
+    }
+
+    #navbar {
+        overflow: hidden;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        border-width: 0 3px 0 0;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.3);
+        width: var(--navbar-width);
+        height: 100%;
+        left: 0px;
+        top: 0px;
+    }
+
+    #navbar:hover {
+        overflow: auto;
+    }
+
+    #navbar-header {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .nav-link-wrap {
+        display: block;
+        padding-left: 40px;
+        border-width: 1px 0 0 0;
+        border-style: solid;
+        border-color: black;
+        line-height: 3rem;
+    }
+
+    a,
+    a:visited {
+        font-size: 1.2rem;
+        position: relative;
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover {
+        color: red;
+    }
+
+    /*Hides Navbar... Could turn the body into a display grid or display flex and change the navbar location but... i dont really feel like it for this lmao*/
+    @media only screen and (max-width: 800px) {
+        #navbar {
+            transform: scale(0);
+        }
+
+        #main-doc {
+            margin-left: 0px;
+        }
+    }
+</style>
+
+</html>
